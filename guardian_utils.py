@@ -35,7 +35,7 @@ def from_guardian_api(
     page
         Return only the result set from a particular page
     page_size
-        The number of items that a page should return
+        The number of articles that a page should return
     show_fields
         Add fields associated with the content (e.g body, thumbnail, etc)
         Check the guardianapi for more information
