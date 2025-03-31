@@ -18,7 +18,7 @@ SEARCH_TERM = "Nigeria"
 FROM_DATE = "2024-01-01"
 TO_DATE = "2025-01-01"
 FILENAME = "mydata"
-PAGE_SIZE = 200
+PAGE_SIZE = 20
 API_KEY = os.getenv("API_KEY") # API KEY HERE
 
 # Make the first request, It contains some needed metadata
@@ -33,7 +33,7 @@ current_page_no = get_current_page_no(from_api)
 
 # Helpful information to for logging
 if current_page_no == 1:
-    logging.info(f'Found {total_results} results')
+    logging.info(f'FOUND {total_results} results in TOTAL')
 
 # extract and save first page articles
 articles = get_articles(from_api)
